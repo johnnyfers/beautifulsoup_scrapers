@@ -3,22 +3,31 @@ def ask():
     1. phones scrapper \n
     2. apple scrapper\n
     3. world population scrapper\n
-    4. cancel
+    4. nfl 2019 standings\n
+    5. cancel
     ''')
 
 
 if __name__ == '__main__':
     option = ask()
-    while (option != '4'):
+    while True:
         if option == '1':
             import scrappers.webscraper.phones_scrapper
 
-        if option == '2':
+        elif option == '2':
             import scrappers.marketwatch.apple_scrapper
 
-        if option == '3':
+        elif option == '3':
             import scrappers.worldometer.world_population_scrapper
 
+        elif option == '4':
+            import scrappers.nfl.nfl_stadings_2019_scrapper
+        
+        elif option == '5':
+            print('bye')
+            break
+        else:
+            print('invalid option')
+        
         option = ask()
 
-        print('invalid option')
