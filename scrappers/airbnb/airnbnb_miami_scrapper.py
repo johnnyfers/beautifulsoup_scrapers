@@ -1,9 +1,13 @@
 from helpers.get_html import get_html
 from helpers.get_random_string import get_random_string
 from helpers.save_csv import save_csv
+from datetime import date, timedelta
+
+checkin = date.today()  + timedelta(days=5)
+checkout = date.today()  + timedelta(days=15)
 
 base_url = 'https://www.airbnb.com.br'
-url = 'https://www.airbnb.com.br/s/Miami-Beach--FL--United-States/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&place_id=ChIJud3-Kxem2YgR62OUJUEXvjc&date_picker_type=calendar&checkin=2022-08-29&checkout=2022-09-27&source=structured_search_input_header&search_type=user_map_move&ne_lat=27.48312235735761&ne_lng=-76.55604491895679&sw_lat=23.8850278868663&sw_lng=-81.17579589551929&zoom=8&search_by_map=true'
+url = f'https://www.airbnb.com.br/s/Miami-Beach--FL--United-States/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&place_id=ChIJud3-Kxem2YgR62OUJUEXvjc&date_picker_type=calendar&checkin={checkin}&checkout={checkout}&source=structured_search_input_header&search_type=user_map_move&ne_lat=27.48312235735761&ne_lng=-76.55604491895679&sw_lat=23.8850278868663&sw_lng=-81.17579589551929&zoom=8&search_by_map=true'
 
 posts = []
 
