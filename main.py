@@ -1,10 +1,24 @@
-from scrappers.webscraper import phones_scrapper
-from scrappers.marketwatch import apple_scrapper
+def ask():
+    return input('''welcome to web scrapping plataform, please choose an option: \n
+    1. phones scrapper \n
+    2. apple scrapper\n
+    3. world population scrapper\n
+    4. cancel
+    ''')
 
 
 if __name__ == '__main__':
-    # get data from https://webscraper.io/test-sites/e-commerce/allinone/phones/touch
-    phones_scrapper
+    option = ask()
+    while (option != '4'):
+        if option == '1':
+            import scrappers.webscraper.phones_scrapper
 
-    # get data from https://www.marketwatch.com/investing/stock/aapl?mod=search_symbolh
-    apple_scrapper
+        if option == '2':
+            import scrappers.marketwatch.apple_scrapper
+
+        if option == '3':
+            import scrappers.worldometer.world_population_scrapper
+
+        option = ask()
+
+        print('invalid option')
