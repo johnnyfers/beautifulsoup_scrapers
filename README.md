@@ -1,7 +1,7 @@
 # trainning_scrappers
 
 This programm will create a csv file in folder "files" with the data scrapped
-from https://webscraper.io/test-sites/e-commerce/allinone/phones/touch, https://www.marketwatch.com/investing/stock/aapl?mod=search_symbol and https://www.worldometers.info/world-population/#total
+from https://www.airbnb.com.br/, https://www.marketwatch.com/investing/stock/aapl?mod=search_symbol, https://www.worldometers.info/world-population/#total and others
 
 ### requirements
 
