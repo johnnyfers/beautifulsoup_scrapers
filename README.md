@@ -12,4 +12,5 @@ from https://webscraper.io/test-sites/e-commerce/allinone/phones/touch and https
 - $ python3 -m venv venv
 - $ source venv/bin/activate
 - $ pip install -r requirements.txt
+- $ mkdir files
 - $ python main.py
