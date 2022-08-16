@@ -5,12 +5,13 @@ def ask():
     3. world population scrapper\n
     4. nfl 2019 standings\n
     5. airbnb MIAMI \n
-    6. cancel \n
+    6. baixelivros \n
+    0. cancel \n
     ''')
-
 
 if __name__ == '__main__':
     option = ask()
+    
     while True:
         if option == '1':
             import scrappers.webscraper.phones_scrapper
@@ -23,6 +24,8 @@ if __name__ == '__main__':
         elif option == '5':
             import scrappers.airbnb.airnbnb_miami_scrapper
         elif option == '6':
+            import scrappers.baixelivros.books_scraper
+        elif option == '0':
             print('bye')
             break
         else:
